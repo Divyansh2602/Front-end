@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My first webpage</title>
+    <!--meta tags-->
+    <meta charset="UTF-8">
+    <meta name="description on html" content="this is the first html page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="60">
+</head>
+<body>
+    <!--for hyper link-->
+    <a href="https://www.google.com" target="blank">
+        GOOGLE
+    </a>
+    <br>
+    <br>
+    <!--for image-->
+    <img src="/extras/1.jpg" height="300" alt="this is an image of html" title="HTML image">
+    <br>
+    <br>
+    <!--for audio-->
+    <audio controls autoplay muted>
+        <source src="/extras/3.mp3">
+        <source src="/extras/3.mav">
+        This audio is not supported in HTML format
+    </audio>
+    <br>
+    <br>
+    <!--for video-->
+    <video controls height="300" width="600">
+        <source src="/extras/2.mp4">
+        <source src="/extras/2.WebM">
+        This video is not supported in HTML format
+    </video>
+    <hr>  
+    <!--text formatting-->  
+    <p>This is a normal text</p>
+    <p>This is a <b>bold</b> text</p>
+    <p>This is an <i>italics</i> text</p>
+    <p>This is a <del>deleted</del> text</p>
+    <p>This is a <sub>subscript</sub> text</p>
+    <p>This is a <sup>superscript</sup> text</p>
+    <p>This is a <small>small</small> text</p>
+    <p>This is a <big>big</big> text</p>
+    <p>This is an <ins>inserted</ins> text</p>
+    <p>This is a <mark>marked</mark> text</p>
+    <br>
+    <br>
+    <!--unordered list-->
+    <ul>
+        <li>pizza</li>
+        <li>egg</li>
+        <li>flour</li>
+    </ul>
+    <br>
+    <!--ordered list-->
+    <ol>
+        <li>water</li>
+        <li>oil</li>
+        <li>flour</li>
+    </ol>
+    <br>
+    <!--description list-->
+    <dl>
+        <dt>toppings</dt>
+        <dd>We have every type of toppings</dd>
+        <dt>price</dt>
+        <dd>We have pizzas from range 100 - 1000</dd>
+    </dl>
+    <br>
+    <br>
+    <!--button-->
+        <a href="https://www.bing.com" target="blank">
+        <button style="background-color: black; color: cyan; border-radius: 5px;">Click</button>
+        </a>        
+    <br>
+    <br>
+    <!--tables-->
+    <table bgcolor="black" width="700">
+        <tr bgcolor="grey">
+            <th width="100">Sunday</th>
+            <th width="100">Monday</th>
+            <th width="100">Tuesday</th>
+            <th width="100">Wednesday</th>
+            <th width="100">Thrusday</th>
+            <th width="100">Friday</th>
+            <th width="100">Saturday</th>
+        </tr>
+        <tr bgcolor="lightgrey" align="center">
+            <td>Closed</td>
+            <td>9 - 5</td>
+            <td>9 - 5</td>
+            <td>9 - 5</td>
+            <td>9 - 5</td>
+            <td>9 - 5</td>
+            <td>Closed</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <!--styling-->
+    <h1 style="color: red;">Hi bro</h1>
+    <p style="background-color: lightblue; color: grey;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, harum et delectus, modi quibusdam quas error voluptates aspernatur accusamus laborum in? Dolor aspernatur quisquam illo id eos asperiores nesciunt explicabo.</p>
+    <br>
+    <br>
+    <!--using span and div tags-->
+    <div style="background-color: cyan;">
+    <p>
+        <span style="color: red;">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span> Similique voluptas nobis quos quaerat qui expedita vitae laboriosam. Laboriosam voluptatum animi corrupti porro, voluptates aspernatur cupiditate saepe itaque aliquam dolorem pariatur?
+
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur nisi distinctio, laboriosam magnam velit quasi et aspernatur consectetur iste. Repudiandae at aperiam voluptatem numquam quia dolores, unde inventore nesciunt aliquid.
+
+    </p>
+    </div>
+    <br>
+    <br>
+    <hr>
+    <!--forms-->
+    <form action="action_page.php" method="POST">
+        <div>
+            <label for="fname">First Name: </label>
+            <input type="text" id="fname" name="fname" placeholder="Spongebob" required>
+        </div>
+        <br>
+        <br>
+        <div>
+            <label for="lname">Last Name: </label>
+            <input type="text" id="lname" name="lname" placeholder="Squarepants" required>
+        </div>
+        <br>
+        <br>
+        <div>
+            <label for="pass">Password: </label>
+            <input type="password" id="pass" name="pass" required minlength="4" maxlength="12">
+        </div>
+        <br>
+        <br>
+        <div>
+            <label for="mail">E-mail: </label>
+            <input type="email" id="mail" name="mail" placeholder="abc@gmail.com" required>
+        </div>
+        <br>
+        <br>
+        <div>
+            <label for="phone">Phone: </label>
+            <input type="tel" id="phone" name="phone" required placeholder="01234-56789">
+        </div>
+        <br>
+        <br>
+        <div>
+            <label for="bdate">Birthday: </label>
+            <input type="date" id="bdate" name="bdate" required>
+        </div>
+        <br>
+        <br>
+        <div>
+            <label for="quan">Quantity: </label>
+            <input type="number" id="quan" name="quan" required min="0" max="100" value="1">
+        </div>
+        <br>
+        <br>
+        <div>
+            <label for="title">Title: </label>
+
+            <label for="Mr.">Mr.</label>
+            <input type="radio" id="Mr." name="title" value="Mr.">
+
+            <label for="Mrs.">Mrs.</label>
+            <input type="radio" id="Mrs." name="title" value="Mrs.">
+
+            <label for="PhD.">PhD.</label>
+            <input type="radio" id="PhD." name-="title" value="PhD.">
+        </div>
+        <br>
+        <br>
+        <div>
+            <label for="payment">Payment: </label>
+            <select id="payment" name="payment">
+                <option value="visa">visa</option>
+                <option value="mastercard">mastercard</option>
+                <option value="upi">upi</option>
+            </select>
+        </div>
+        <br>
+        <br>
+        <div>
+            <label for="check">Check me</label>
+            <input type="checkbox" id="check" name="check">
+        </div>
+        <br>
+        <br>
+        <div>
+            <input type="reset">
+        </div>
+        <br>
+        <br>
+        <div>
+            <input type="submit">
+        </div>
+        <br>
+        <br>
+
+
+    </form>  
+    <!--iframe-->
+    <br>
+    <br>
+    <iframe src="https://www.bing.com" height="250" width="650">
+      
+</body>
+</html>
